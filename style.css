@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat%3Awght%40400%3B500&family=Poppins%3Awght%40300%3B400%3B500&family=Roboto%3Awght%40400%3B500&display=swap%27%29%3B);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+}
+
+/*HEADER*/
+
+header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #701414, #A2383A 45%, #A2383A 48%, #d96410 50%, #701414);
+}
+
+header img {
+    justify-self: center;
+    max-width: 200px;
+}
+
+header nav .navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao li a {
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+    font-family: 'Montserrat';
+    transition: all .5s;
+}
+
+.navegacao li a:hover {
+    color: #fff;
+}
+
+/*CONTENT*/
+
+.content {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: linear-gradient(90deg, #701414, #A2383A 45%, #A2383A 48%, #d96410 50%, #701414);
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #c9c9c94d;
+}
+
+.content h1 {
+     margin-bottom: 60px;
+     grid-column: 1;
+     font-size: 3rem;
+     font-family: 'Poppins';
+     color: #fff;
+     line-height: 1;
+     position: relative;
+}
+
+.content h1::after {
+    content: '';
+    margin-top: 20px;
+    width: 60px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+}
+
+.content p {
+    margin-left: 30px;
+    font-size: .9rem;
+    color: #adacac;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+/*MAIN CONTEUDO*/
+
+main {
+    display: grid;
+    background-color: #A2383A;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+main article {
+    padding: 0 20px;
+    display: grid;
+    border: 1px solid #c9c9c94d;
+}
+
+main article:nth-child(1) h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Poppins';
+    line-height: 1.3;
+    align-items: center;
+    position: relative;
+}
+
+main article:nth-child(1) h2::after {
+    content: '';
+    margin-top: 10px;
+    width: 60px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    display: block;
+}
+
+main article:nth-child(1) p {
+    color: #adacac;
+    font-size: 1.1rem;
+    align-self: end;
+}
+
+main .prato {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .prato .prato_efeito {
+    width: 5px;
+    height: 40px;
+    background-color: #fff;
+    justify-self: center;
+    display: block;
+}
+
+main .prato h3 {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main .prato span:last-child {
+    color: #f7f7f7;
+    font-size: .9rem;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+main article img {
+    max-width: 100%;
+}
